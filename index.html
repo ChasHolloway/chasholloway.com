@@ -52,7 +52,8 @@
     max-width: 360px;
 }
 
-.tile img {
+.tile img,
+.tile video {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -136,9 +137,11 @@
 <section class="tiles-section">
     <div class="tiles">
 
-        <a class="tile" href="fwt.html">
-            <img src="fwt.jpeg" alt="Free World Theory">
-        </a>
+<a class="tile" href="fwt.html">
+    <video autoplay muted loop playsinline>
+        <source src="FWT ballet 2.mp4" type="video/mp4">
+    </video>
+</a>
 
         <a class="tile" href="fc.html">
             <img src="FC.jpg" alt="Freedom-Constraint">

@@ -34,6 +34,43 @@
     font-size: 22px;
     margin: 0;
 }
+        .tiles-section {
+    padding: 80px 6% 100px;
+    background-color: #000000;
+}
+
+.tiles {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.tile {
+    flex: 1;
+    max-width: 360px;
+}
+
+.tile img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    border: 2px solid #173b8f;
+    box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+    .tiles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tile {
+        width: 90%;
+    }
+}
     </style>
 </head>
 <body>
@@ -46,5 +83,23 @@
         </div>
     </section>
 
+<section class="tiles-section">
+    <div class="tiles">
+
+        <a class="tile" href="fwt.html">
+            <img src="fwt.jpeg" alt="Free World Theory">
+        </a>
+
+        <a class="tile" href="fc.html">
+            <img src="FC.jpg" alt="Freedom-Constraint">
+        </a>
+
+        <a class="tile" href="thinkopolis.html">
+            <img src="think.png" alt="Thinkopolis">
+        </a>
+
+    </div>
+</section>
+    
 </body>
 </html>

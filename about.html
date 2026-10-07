@@ -6,16 +6,100 @@
   <title>About Chas Holloway</title>
 
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
-      min-height: 100%;
       background: #000;
       color: #fff;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .about {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 100px 40px;
+      display: flex;
+      gap: 60px;
+      align-items: flex-start;
+    }
+
+    .about img {
+      width: 300px;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    .about-text {
+      font-size: 21px;
+      line-height: 1.6;
+    }
+
+    .about-text h1 {
+      font-size: 42px;
+      margin: 0 0 30px 0;
+    }
+
+    .about-text p {
+      margin: 0 0 24px 0;
+    }
+
+    @media (max-width: 750px) {
+      .about {
+        flex-direction: column;
+        padding: 50px 25px;
+      }
+
+      .about img {
+        width: 100%;
+        max-width: 300px;
+      }
     }
   </style>
 </head>
 
 <body>
+
+  <main class="about">
+
+    <img src="chas-holloway.jpg" alt="Chas Holloway">
+
+    <div class="about-text">
+
+      <h1>About Chas Holloway</h1>
+
+      <p>
+        Charles (Chas) Holloway is the discoverer of the Freedom-Constraint
+        (FC) equation and process, a new way to calibrate, optimize and
+        control systems.
+      </p>
+
+      <p>
+        FC grew out of earlier work he did on Free World Theory, a scientific
+        project that applies scientific reasoning to the understanding and
+        optimization of human societies. He is the author of
+        <em>Free World Theory: A Solution for a Failing World</em>, and also
+        authored the Constitution of the Chiricahua Apache Mimbreno Nde Nation
+        in Texas/New Mexico. He serves on the Board of Directors of Liberland.
+      </p>
+
+      <p>
+        Earlier in his career, Holloway worked extensively in popular media
+        as a writer, publisher and producer. Over the years, he has worked on
+        projects with Theodore Sturgeon, Harlan Ellison, George Clayton
+        Johnson, Clive Barker, David Valdes, the Rod Serling Literary Estate,
+        William F. Nolan, Danny Simon, John Truby, Michael Shermer, and even
+        Weird Al Yankovic.
+      </p>
+
+      <p>
+        Chas Holloway was born in La Jolla, California, and is the grandson
+        of aviation pioneer Reuben H. Fleet, founder and president of
+        Consolidated Aircraft Company, the largest producer of B-24 Liberator
+        bombers during World War II.
+      </p>
+
+    </div>
+
+  </main>
+
 </body>
 </html>
